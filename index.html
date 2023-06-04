@@ -9,11 +9,15 @@
   <body>
     <!--Nav tag is used here for navigation bar at top right corner -->
     <nav>
+     
       <div id="navdiv">
+        <a href="" id="moon"><i class="fa fa-moon"></i></a>
+        <a href="" id="sun"><i class="fa fa-sun"></i></a>
         <a href="image/google.png" class="">Gmail</a>
         <a href="image/google.png" class="">Images</a>
         <div><img src="" class="fa fa-bars bar"></div>
         <div><button type="submit" name="button">Sign In</button></div>
+     
       </div>
     </nav>
     <!--End of navigation -->
@@ -25,7 +29,7 @@
         <div>
           <div id="maindiv">
             <span><img src="" class="fa fa-search"></span>
-            <span id="inputspan"><input type="text" name="search"></span>
+            <span class="search" id="inputspan"><input type="text" name="search" ></span>
             <span><img src="" class="fa fa-microphone"></span>
           </div>
         </div>
@@ -36,5 +40,21 @@
         </section>     
       </center>
     </main>
+    <script>
+    // JavaScript for changing the theme of the website
+    onload=()=>{
+      let moon = document.getElementById("moon");
+    let sun = document.getElementById("sun");
+    let body = document.body;
+    moon.onclick=(e)=>{
+      e.preventDefault()
+      body.style.backgroundColor="#202123"
+    }
+    sun.onclick=(e)=>{
+      e.preventDefault()
+      body.style.backgroundColor="white"
+    }
+    }
+    </script>
   </body>
 </html>
